@@ -1,0 +1,118 @@
+@import "../../scss/reset", "../../scss/variables";
+
+.intro-page {
+  background-color: $backgroundColor;
+  display: flex;
+  flex-direction: column;
+//   border: 1px solid blue;
+  width: 390px;
+  height: 844px;
+  margin: auto;
+
+}
+header {
+  margin-top: 30px;
+  font-family: "Montserrat";
+  font-style: normal;
+  text-align: center;
+  color:$textColor;
+  // border: 1px solid black;
+}
+header h3 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+}
+header p {
+  font-weight: 400px;
+  font-size: 14px;
+  line-height: 17px;
+}
+.intro-img {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 115px;
+  // border: 1px solid purple;
+  width: 300px;
+  height: 272px;
+  text-align: center;
+  // position: absolute;
+}
+footer {
+  // border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-bottom: 15px;
+  justify-content: end;
+  padding: 16px;
+  gap: 32px;
+  width: 358px;
+  background: $cardsBgColor;
+  box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+}
+button {
+  display: flex;
+  // flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 99px;
+  width: 326px;
+  height: 56px;
+  background-color: $textColor;
+  color: $cardsBgColor;
+  padding: 7px 16px;
+  cursor: pointer;
+  &:active {
+    background-color: $cardsBgColor;
+    color: $textColor;
+  }
+}
+
+@media screen and (max-width: 390px) { 
+  .intro-page {
+  width: 280px;
+  height: 644px;
+
+}
+.intro-img {
+  width: 250px;
+  height: 200px;
+}
+footer {
+  // border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-bottom: 10px;
+  justify-content: end;
+  padding: 8px;
+  gap: 16px;
+  width: 260px;
+  background: $cardsBgColor;
+  box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  font-size: 10px;
+}
+
+button {
+  display: flex;
+  // flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 99px;
+  width: 220px;
+  height: 35px;
+  background-color: $textColor;
+  color: $cardsBgColor;
+  padding: 7px 16px;
+  cursor: pointer;
+  &:active {
+    background-color: $cardsBgColor;
+    color: $textColor;
+  }
+}
+  
+}
