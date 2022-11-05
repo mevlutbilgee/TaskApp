@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 import { TestCaseContext } from "../../context/testcasecontext";
 import Card from "../Home/Card";
 
-
 const MyPoints = () => {
   const { completed  } = useContext(TestCaseContext); 
   const navigate = useNavigate();
